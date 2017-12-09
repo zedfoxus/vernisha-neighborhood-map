@@ -1,78 +1,66 @@
-html,
-      body {
-        font-family: Arial, sans-serif;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+html,body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-          
-      h1 {
-		font-size: 20px;
-		color: #663300;
-		margin: 0 0 10px 0;
-		text-align: center;
-	  }	
+h1 {
+  font-size: 20px;
+  color: #663300;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
 
-            
-      #map {
-		height: 100%;
-		width: 100%;
-		padding-bottom: 5%;
-		padding-right: 20%;
-		padding-left: 20%;
-		display: block;
-		overflow: auto;
-	  }
-	  
-	  .infoWindow {
-		width: 250px;
-		height: 200px;
-		overflow: auto;
-	  }
-	  
-	  .infoHeader {
-		text-align: center;
-		font-size: 1.5rem;
-		color: #a2daf2;
-	  }
-  
-		.sidenav {
-		height: 100%;
-		width: 100%;
-		position: fixed;
-		z-index: 2;
-		top: 0;
-		left: 0;
-		padding: 20px;
-		overflow-x: hidden;
-		transition: 0.5s;
-		color: #555;
-		background-color: white;
-		box-shadow: 5px 5px 10px #bbb;
-		}
-		
-				
-      #pano {
-        width: 200px;
-        height: 200px;
-      }
+#map {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5%;
+  padding-right: 20%;
+  padding-left: 20%;
+  display: block;
+  overflow: auto;
+}
 
-	       
-	  
-	 
-	  
-	  @media screen and (max-height: 450px) {
-		.sidenav {padding-top: 15px;}
-		.sidenav a {font-size: 18px;}
-		}
+.infoWindow {
+  width: 250px;
+  height: 200px;
+  overflow: auto;
+}
 
-		@media screen and (max-width: 450px) {
-		.sidenav {
-		height: auto;
-		}
-		}
-		
-		
-		
-		
+.infoHeader {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #a2daf2;
+}
+
+.sidenav {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #555;
+  background-color: white;
+  box-shadow: 5px 5px 10px #bbb;
+}
+
+#pano {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    height: auto;
+  }
+}
