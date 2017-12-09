@@ -14,28 +14,28 @@
       
   </head>
   <body>
-  
+
     <div class="container">
       <div class="sidenav"> 
         <h1>Detroit Sports & Entertainment</h1>
-			<div class="title"
-				<input class="search" type="text" data-bind="value: $data.title">
-				<ul data-bind="foreach: title">
-					<li data-bind="text: $data"></li>
-				</ul>
-		<div>
-		<hr>
-	 </div>
-    </div>
+        <div class="title"
+          <input class="search" type="text" data-bind="value: $data.title">
+          <ul data-bind="foreach: title">
+            <li data-bind="text: $data"></li>
+          </ul>
+          <div>
+            <hr>
+          </div>
+        </div>
       
-      <div id="map"></div>
+        <div id="map"></div>
+      </div>
     </div>
-   	
-	<script src="js/lib/knockout-3.2.0.js"></script>
-	<script src="js/data.js"></script>
+
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/app.js"></script>
-	
-	
+
     <script async defer
         src=
         "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBbE2Hf6vmdtElJ31ie77BhEfkDVkK2Vyg&v=3&callback=initMap" async defer onerror="mapError()">
