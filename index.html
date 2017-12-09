@@ -18,6 +18,12 @@
   <!-- attribution: https://stackoverflow.com/questions/9115051/html-content-to-right-of-google-map -->
   <div id="sidenav" style="float:left; width:25%; height:100%">
       <h1>Detroit Sports & Entertainment</h1>
+      <div class="title">
+        <input class="search" type="text" data-bind="value: $data.title">
+        <ul data-bind:"foreach: title">
+          <li data-bind:"text: $data"></li>
+        </ul>
+      </div>
   </div>
   <div id="map" style="float:left; width:75%; height:100%"></div>
 
