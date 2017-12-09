@@ -123,7 +123,7 @@ var map;
           var title = locations[i].title;
           // Create a marker per location, and put into markers array.
           var marker = new google.maps.Marker({
-			map: map,
+            map: map,
             position: position,
             title: title,
             animation: google.maps.Animation.DROP,
@@ -136,7 +136,7 @@ var map;
           marker.addListener('click', function() {
             populateInfoWindow(this, largeInfowindow);
           });
-		  
+          
           // Two event listeners - one for mouseover, one for mouseout,
           // to change the colors back and forth.
           marker.addListener('mouseover', function() {
@@ -149,7 +149,7 @@ var map;
    }
 
    document.getElementById('zoom-to-area').addEventListener('click',function(){
-	   zoomToArea();
+       zoomToArea();
    });
    
    
@@ -259,44 +259,44 @@ var map;
             });
         }
       }
-	  
-	  //need clickable list view of locations to display as default in sidebar//
-	  //venue description - ex: Sports.  Add wikipedia link//
-	  //when I search the location - want the name and marker to filter together//
-	 	
-			
-		var Place = function (data) {
-		
-		this.title = ko.observable(data.title);
-		this.lat = ko.observable(data.lat);
-		this.lng = ko.observable(data.lng);
-		
-    	};
-		
-		var ViewModel = function () {
-			
-		// Make this accessible
-		var self = this;
-	
-		this.locationList = ko.observableArray([]);
-	
-		locations.forEach(function (locationItem) {
-			self.locationList.push(new Location(locationItem));
-		});
-		
-	};	
-		
-		
-		
+      
+      //need clickable list view of locations to display as default in sidebar//
+      //venue description - ex: Sports.  Add wikipedia link//
+      //when I search the location - want the name and marker to filter together//
+         
+            
+        var Place = function (data) {
+        
+        this.title = ko.observable(data.title);
+        this.lat = ko.observable(data.lat);
+        this.lng = ko.observable(data.lng);
+        
+        };
+        
+        var ViewModel = function () {
+            
+        // Make this accessible
+        var self = this;
+    
+        this.locationList = ko.observableArray([]);
+    
+        locations.forEach(function (locationItem) {
+            self.locationList.push(new Location(locationItem));
+        });
+        
+    };	
+        
+        
+        
 
-		// apply binding 
-		ko.applyBindings(ViewModel);
+        // apply binding 
+        ko.applyBindings(ViewModel);
 
 
       
-	  
-	  
-	  //Error handling
-		function errorHandling () {
-		alert("Google Maps has failed to load. Please check your internet connection and try again.");
+      
+      
+      //Error handling
+        function errorHandling () {
+        alert("Google Maps has failed to load. Please check your internet connection and try again.");
 }
