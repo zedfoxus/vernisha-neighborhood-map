@@ -12,7 +12,7 @@ h1 {
   text-align: center;
 }
 
-#map {
+.map {
   height: 100%;
   width: 100%;
   padding-bottom: 5%;
@@ -37,7 +37,6 @@ h1 {
 .sidenav {
   height: 100%;
   width: 100%;
-  position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
