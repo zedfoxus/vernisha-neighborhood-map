@@ -152,9 +152,11 @@ function initMap() {
 }
 
 
+/*
 document.getElementById('zoom-to-area').addEventListener('click',function(){
     zoomToArea();
 });
+*/
 
 
 // This function populates the infowindow when the marker is clicked. We'll only allow
@@ -290,18 +292,14 @@ var Place = function (data) {
 };
 
 
-var ViewModel = function () {
-    // Make this accessible
+function ViewModel() {
     var self = this;
-    this.locationList = ko.observableArray([]);
-    locations.forEach(function (locationItem) {
-        self.locationList.push(new Location(locationItem));
-    });
-};
+    self.locationList = ko.observableArray(locations);
+}
 
 
 // apply binding
-ko.applyBindings(ViewModel);
+ko.applyBindings(new ViewModel());
 
 
 //Error handling

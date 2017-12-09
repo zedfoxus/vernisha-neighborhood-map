@@ -16,8 +16,8 @@
       <h1>Detroit Sports & Entertainment</h1>
       <div class="title">
         <input class="search" type="text" data-bind="value: $data.title">
-        <ul data-bind:"foreach: title">
-          <li data-bind:"text: $data"></li>
+        <ul data-bind="foreach: locationList">
+          <li><span data-bind="text: title"></li>
         </ul>
       </div>
   </div>
